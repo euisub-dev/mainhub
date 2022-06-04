@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;900&display=swap');
+
+:root{
+    --blue-color: #075DB2;
+    --topic-color: #323232;
+    --orange-color: #FF6C00;
+}
+
+body{
+    width: 920px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top:30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+hr {
+    border : 1px solid var(--blue-color);
+    opacity: 0.3;
+}
+
+.coment{
+    color: var(--orange-color);
+    font-size: 14px;
+}
+
+/* size */
+.w10f {width: 10%;}
+.w20f {width: 20%;}
+.w30f {width: 30%;}
+.w40f {width: 40%;}
+.w50f {width: 50%;}
+.w70f {width: 70%;}
+
+/* text align */
+.ta-center { text-align: center;}
+.ta-right { text-align: right;}
+.ta-left { text-align: left;}
+
+/* header */
+header { padding:30px;}
+header h1 { font-size: 40px; font-weight: 600; color: var(--blue-color);}
+header h3 { font-size: 13px;}
+header ul { padding: 20px 0;}
+header ul > li { padding: 5px 0;}
+header ul > li > i {margin-right: 10px;}
+
+/* main */
+main article > section { padding: 30px}
+main article > section > div > h2 { 
+    font-size: 22px; 
+    font-weight: 600; 
+    color: var(--topic-color);
+}
+main article > section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+main article > section li {
+    padding: 5px;
+}
+
+#Education div >  ul > li:nth-child(2){
+    list-style: none;
+}
+
+#Work li:hover,
+#Personal li:hover{
+    cursor: pointer;
+    color: var(--blue-color);
+}
+
+
+/* flex */
+.d-flex { display : flex; }
+.f-column {flex-direction: column; }
+.jc-space-between {justify-content: space-between;}
+.jc-space-around  {justify-content: space-around;}
+.as-cneter{align-self: center;}
